@@ -21,7 +21,7 @@ p {
 .heading {
    
 position: absolute;
-    top 0;
+    top: 0;
     right: 0;
     left: 0;
 z-index: 1000;
@@ -44,7 +44,7 @@ z-index: 1000;
 .heading_items {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -168,7 +168,7 @@ z-index: 1000;
     color: #555555;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 99px;
+    padding-top: 99px;
 }
 
 .title::after {
@@ -525,7 +525,7 @@ z-index: 1000;
     width: 100%;
     max-width: 898px;
     margin: 0 auto;
-    margin-top: 215px;
+    padding-top: 215px;
 
     display: flex;
 }

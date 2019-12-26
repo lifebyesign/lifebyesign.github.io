@@ -29,4 +29,16 @@ $(function(){
        
          
     })
+    /*Scroll*/
+    $("[data-scroll]").on("click", function(Event){
+        Event.preventDefault();
+         var blockI = $(this).data('scroll'),
+             blockOffset = $(blockI).offset().top;
+        $("html, body").animate({
+            scrollTop: blockOffset
+            
+        });
+        
+        
+    });
 });
