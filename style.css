@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-
 
 body {
     margin: 0;
@@ -395,9 +391,9 @@ z-index: 1000;
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 125px;
+    left: 50%;
     z-index: 2;
-    transform: translate3d(0, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 
 }
 
@@ -794,6 +790,14 @@ footer {
         padding: 15px;
     
 }
+    /*FOrm*/
+    .contacts{
+        display: none;
+    }
+    .touch_items{
+        margin: 0 auto;
+        
+    }
 }
 
 @media(max-width: 760px) {
