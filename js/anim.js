@@ -42,7 +42,7 @@ $(function(){
             
             
         });
-        navigat.removeClass("active");
+        navigat.toggleClass("active");
         
         
     });
