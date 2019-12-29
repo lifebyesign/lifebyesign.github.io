@@ -34,8 +34,12 @@ $(function(){
         Event.preventDefault();
          var blockI = $(this).data('scroll'),
              blockOffset = $(blockI).offset().top;
+            var  navigat = $("nav");
+        navigat.removeClass("active");
         $("html, body").animate({
             scrollTop: blockOffset
+            
+            
             
         });
         
