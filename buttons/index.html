@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+</head>
+<body>
+<form action="index.html" class="login_form">
+   <h1>Login</h1>
+   <div class="txtb">
+       <input type="text">
+       <span data-placeholder="Username"></span>
+   </div>
+   <div class="txtb">
+       <input type="password">
+       <span data-placeholder="Password"></span>
+   </div>
+   <input type="submit" class="buttons" value="Login">
+    
+    <div class="bottom_text">
+        Don't have acount? <a href="#">Sign up</a>
+    </div>
+    
+</form>
+       
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+      $(".txtb input").on("focus", function(){
+          $(this).addClass("focus")
+      }
+                         )
+       $(".txtb input").on("blur", function(){
+           if($(this).val() == '')
+          $(this).removeClass("focus")
+      }
+                         )
+      
+    </script>
+  
+</body>
+</html>

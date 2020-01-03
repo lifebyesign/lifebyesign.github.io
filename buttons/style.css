@@ -1,0 +1,107 @@
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+  min-height: 100vh;
+    background: linear-gradient(120deg,#3c40c6, #f53b57);
+}
+.login_form{
+    width: 320px;
+    height: 460px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 4px 10px #333;
+    
+}
+.login_form h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 0;
+    
+}
+.txtb input{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    
+    background: none;
+    color: #333;
+    padding:5px 5px;
+     height: 25px;
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 12px;
+    color: #adadad;
+    z-index: -1;
+    transition: .5s;
+}
+.txtb span::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+     width: 0;
+    height: 2px;
+    
+   
+    background: linear-gradient(120deg,#3c40c6, #f53b57);
+     transition: .5s;
+}
+.focus+span::before{
+top:-10%;
+}
+.focus+span::after{
+    width: 100%;
+}
+
+.buttons{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(120deg,#3c40c6, #f53b57,#3c40c6);
+    background-size: 200%;
+    transition: .5s all;
+    
+}
+.buttons:hover{
+    background-position: right;
+    cursor: pointer;
+}
+.bottom_text{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #adadad;
+}
+.bottom_text a{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+@media(max-width: 350px){
+    .login_form{
+        width: 300px;
+    }
+}
